@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity Sculpting by Crystal</title>
+  <meta name="description" content="Professional body contouring and sculpting services. Book your transformation session with Crystal today." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="navbar">
+    <a href="#home" class="nav-logo">
+      <span class="logo-main">Serenity Sculpting</span>
+      <span class="logo-sub">by Crystal</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn-nav">Book Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#services" onclick="closeNav()">Services</a>
+    <a href="#results" onclick="closeNav()">Results</a>
+    <a href="#how-it-works" onclick="closeNav()">How It Works</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#faq" onclick="closeNav()">FAQ</a>
+    <a href="https://serenitysculpting.glossgenius.com/" target="_blank" onclick="closeNav()">Book Now</a>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <!-- Floating shapes -->
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="hero-shape hero-shape--1"><div class="hero-shape-inner"></div></div>
+      <div class="hero-shape hero-shape--2"><div class="hero-shape-inner"></div></div>
+      <div class="hero-shape hero-shape--3"><div class="hero-shape-inner"></div></div>
+      <div class="hero-shape hero-shape--4"><div class="hero-shape-inner"></div></div>
+      <div class="hero-shape hero-shape--5"><div class="hero-shape-inner"></div></div>
+    </div>
+
+    <div class="hero-content hero-content--centered">
+      <div class="hero-logo-badge hero-anim hero-anim--1">
+        <img src="images/logo.png" alt="Serenity Sculpting by Crystal" class="hero-logo-top" />
+      </div>
+      <h1 class="hero-anim hero-anim--2">
+        Sculpt Your Confidence.<br />
+        <span class="hero-h1-gradient">Transform Your Life.</span>
+      </h1>
+      <p class="hero-sub hero-anim hero-anim--3">
+        Professional non-invasive body sculpting treatments tailored to your goals.
+        No surgery. No downtime. Real results.
+      </p>
+      <div class="hero-btns hero-anim hero-anim--4">
+        <a href="#booking" class="btn btn-primary">Book a Session</a>
+        <a href="#results" class="btn btn-outline">See Results</a>
+      </div>
+    </div>
+
+    <!-- Bottom + top gradient vignette -->
+    <div class="hero-vignette"></div>
+  </section>
+
+  <!-- ─── TRUST BAR ─── -->
+  <div class="trust-bar">
+    <div class="trust-item"><span class="trust-num">500+</span><span>Clients Served</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">100%</span><span>Non-Invasive</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">5★</span><span>Rated Service</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">No</span><span>Downtime Needed</span></div>
+  </div>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="images/crystal-portrait.jpeg" alt="Crystal — Serenity Sculpting Specialist" class="about-portrait" />
+        </div>
+        <div class="about-content">
+          <div class="section-label">Meet Your Specialist</div>
+          <h2 class="section-title">Hi, I'm Crystal</h2>
+          <p>I started Serenity Sculpting because I believe every woman deserves to feel confident in her body — without going under the knife.</p>
+          <p>I'm a certified body contouring specialist with years of hands-on experience. Every session is done in a private, peaceful environment where you can relax and focus on yourself.</p>
+          <p>My mission is simple: help you look and feel your best using safe, proven, non-invasive techniques.</p>
+          <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-primary" style="margin-top:16px">Book with Crystal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our Sculpting Services</h2>
+      <p class="section-sub">Every treatment is customized to your body and goals. All sessions are performed by Crystal in a private, relaxing environment.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Ultrasonic Cavitation</h3>
+          <p>Uses ultrasound waves to break down fat cells without surgery. Best for stubborn belly, thigh, and arm fat.</p>
+          <div class="service-footer">
+            <span class="service-price">From $120</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Radio Frequency Tightening</h3>
+          <p>Tightens and firms loose skin using controlled heat energy. Great for post-pregnancy skin or weight loss sagging.</p>
+          <div class="service-footer">
+            <span class="service-price">From $100</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Wood Therapy</h3>
+          <p>Lymphatic drainage massage using wooden tools to sculpt, contour, and eliminate toxins. Immediate visible results.</p>
+          <div class="service-footer">
+            <span class="service-price">From $90</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Vacuum Therapy / BBL</h3>
+          <p>Lifts and contours the buttocks naturally using suction and massage. No injections, no surgery.</p>
+          <div class="service-footer">
+            <span class="service-price">From $110</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Infrared Body Wrap</h3>
+          <p>Detoxifies, reduces cellulite, and promotes circulation with deep infrared heat therapy. Relaxing and effective.</p>
+          <div class="service-footer">
+            <span class="service-price">From $85</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+        <div class="service-card featured-service">
+          <div class="service-badge">Best Value</div>
+          <div class="service-icon">✦</div>
+          <h3>Full Body Sculpting Package</h3>
+          <p>Combines cavitation, RF tightening, and wood therapy in one session. Maximum results, one appointment.</p>
+          <div class="service-footer">
+            <span class="service-price">From $299</span>
+            <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-sm btn-primary">Book</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section class="section alt-section" id="how-it-works">
+    <div class="container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title" style="text-align:center">How It Works</h2>
+      <p class="section-sub" style="text-align:center">Getting started is easy. Three steps to your transformation.</p>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Book Online</h3>
+          <p>Choose your service and pick a time that works for you using the booking calendar below. A small deposit holds your spot.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Come In</h3>
+          <p>Arrive at your appointment. Crystal will do a quick consultation, explain the treatment, and get you comfortable.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>See Results</h3>
+          <p>Leave feeling lighter, tighter, and more confident. Most clients see visible results after just one session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESULTS ─── -->
+  <section class="section results-section" id="results">
+    <div class="container">
+      <div class="section-label">Real Results</div>
+      <h2 class="section-title">Client Transformations</h2>
+      <p class="section-sub">Real clients. Real results. Crystal delivers visible changes — often after just one session. All content shared with full client consent.</p>
+
+      <div class="results-grid">
+        <div class="result-card result-wide">
+          <img src="images/results-1.jpeg" alt="Before and after — belly contouring" />
+        </div>
+        <div class="result-card">
+          <img src="images/results-2.jpeg" alt="Before and after — waist sculpting" />
+        </div>
+        <div class="result-card">
+          <img src="images/results-3.jpeg" alt="Before and after — vacuum therapy BBL" />
+        </div>
+        <div class="result-card">
+          <img src="images/results-4.jpeg" alt="Before and after — back contouring" />
+        </div>
+        <div class="result-card">
+          <img src="images/results-5.jpeg" alt="Before and after — sculpting results" />
+        </div>
+      </div>
+
+      <p class="results-note">Individual results may vary. All treatments are 100% non-invasive.</p>
+      <div style="text-align:center; margin-top:36px">
+        <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-primary">Book Your Transformation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BOOKING ─── -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="section-label">Schedule Your Session</div>
+      <h2 class="section-title">Book an Appointment</h2>
+      <p class="section-sub">Pick a date and time below. A $25 deposit is required to confirm your booking (applied to your session).</p>
+
+      <!-- DEPOSIT INFO -->
+      <div class="deposit-box">
+        <div class="deposit-left">
+          <h4>Booking is Simple — Done Entirely Online</h4>
+          <p>Choose your service, pick your time, and pay your deposit — all through GlossGenius. A <strong>$25 deposit</strong> is required to confirm your spot ($50 for packages). It's applied to your service total.</p>
+        </div>
+        <div class="deposit-btns">
+          <a href="https://serenitysculpting.glossgenius.com/" target="_blank" class="btn btn-primary">Book &amp; Pay Deposit</a>
+        </div>
+      </div>
+
+
+      <p class="booking-note">
+        Prefer to reach out directly? Text Crystal at <strong>(559) 481-9143</strong> or DM <a href="https://www.instagram.com/serenitysculpting_/" target="_blank">@serenitysculpting_</a> on Instagram.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="section alt-section">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Client Love</div>
+      <h2 class="section-title" style="text-align:center">What Clients Are Saying</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Thank you so much Crystal for making me feel comfortable in my own skin! I appreciate how welcoming and fun Crystal is! It makes me look forward to coming back! Not only that, my results have been shocking in the best way."</p>
+          <span class="testimonial-name">— Pahoua V.</span>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"I was nervous at first but Crystal walked me through everything. The wood therapy is my favorite — I leave feeling amazing every time. Visible results after my very first session!"</p>
+          <span class="testimonial-name">— Monique T.</span>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Booked online, showed up, and left with a slimmer waist. The whole experience is professional, the space is so relaxing, and Crystal truly cares about your results."</p>
+          <span class="testimonial-name">— Aaliyah S.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Got Questions?</div>
+      <h2 class="section-title" style="text-align:center">Frequently Asked Questions</h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto 48px">Everything you need to know before your first session with Crystal.</p>
+
+      <div class="faq-grid">
+
+        <details class="faq-item" open>
+          <summary class="faq-question">How do I book an appointment?</summary>
+          <div class="faq-answer">
+            <p>Click <strong>Book Now</strong> on this page to schedule directly through GlossGenius. You can also DM Crystal on Instagram <a href="https://www.instagram.com/serenitysculpting_/" target="_blank">@serenitysculpting_</a> or text <a href="tel:5594819143">(559) 481-9143</a>. Your appointment is only confirmed once your deposit is received.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How do I choose the right treatment?</summary>
+          <div class="faq-answer">
+            <p>DM or text Crystal with a brief description of your goals and concerns — she'll recommend the service that fits you best. Not sure? Book a consultation and she'll walk you through everything.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Can I eat before my session?</summary>
+          <div class="faq-answer">
+            <p>Yes — but keep it light. Eat something that sits easy on your stomach and avoid overeating or arriving feeling bloated, as this can affect your treatment results.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What should I wear?</summary>
+          <div class="faq-answer">
+            <p>Comfortable, loose clothing is best. Crystal will provide everything needed for your specific treatment during the session.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How many sessions will I need?</summary>
+          <div class="faq-answer">
+            <p>Most clients see visible results after just one session. For lasting transformation, a series of 4–8 sessions is typically recommended depending on your goals and the area being treated.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Is it painful?</summary>
+          <div class="faq-answer">
+            <p>No — all treatments are 100% non-invasive and comfortable. Most clients find the sessions deeply relaxing. There is no surgery and no recovery downtime.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How soon after giving birth can I come in?</summary>
+          <div class="faq-answer">
+            <p>At least <strong>6 weeks</strong> after a natural birth, or <strong>6 months</strong> after a C-section. Always consult your doctor before beginning treatments postpartum.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Can I receive treatment while breastfeeding?</summary>
+          <div class="faq-answer">
+            <p>Yes, but please pump and dump after your session. The treatments release stored toxins, which can enter your milk supply — so it's important to take this precaution to protect your baby.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What is your cancellation policy?</summary>
+          <div class="faq-answer">
+            <p>You may cancel or reschedule with <strong>24+ hours notice</strong> at no charge. Less than 24 hours: 50% of the service price is charged. No-shows are charged <strong>100%</strong> of the booked service. You may reschedule up to 2 times — after that, a new deposit is required.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What if I arrive late?</summary>
+          <div class="faq-answer">
+            <p>Please arrive <strong>5–10 minutes early</strong> and text Crystal when you arrive — do not ring the doorbell. If you're more than <strong>10 minutes late</strong>, your session will be cancelled and the deposit is forfeited.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Get in Touch</div>
+      <h2 class="section-title" style="text-align:center">Contact Crystal</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Location</h4>
+          <p><!-- TODO: Add Crystal's city --> <br />Private studio — address shared after booking</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h4>Text or Call</h4>
+          <p><a href="tel:5594819143">(559) 481-9143</a><br />Response within a few hours</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <h4>Hours</h4>
+          <p>Mon – Fri: 9am – 7pm<br />Sat: 9am – 5pm<br />Sun: By Appointment</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📸</div>
+          <h4>Instagram</h4>
+          <p><a href="https://www.instagram.com/serenitysculpting_/" target="_blank">@serenitysculpting_</a><br />Before & afters + tips</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Serenity Sculpting</p>
+        <p>Non-invasive body contouring by Crystal.<br />Your transformation starts here.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Ultrasonic Cavitation</a>
+        <a href="#services">RF Skin Tightening</a>
+        <a href="#services">Wood Therapy</a>
+        <a href="#services">Vacuum Therapy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#booking">Book Appointment</a>
+        <a href="#about">About Crystal</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Serenity Sculpting by Crystal. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ─── CHATBOT ─── -->
+  <div id="chat-widget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Open chat">
+      <span class="chat-icon-open">💬</span>
+      <span class="chat-icon-close" style="display:none">✕</span>
+    </button>
+    <div class="chat-window" id="chatWindow" style="display:none">
+      <div class="chat-header">
+        <div class="chat-avatar">C</div>
+        <div>
+          <p class="chat-name">Crystal's Assistant</p>
+          <p class="chat-status">Usually replies instantly</p>
+        </div>
+        <button class="chat-close-btn" id="chatClose">✕</button>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-quick-replies" id="quickReplies"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off" />
+        <button id="chatSend">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="chatbot.js"></script>
+  <script>
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile nav
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navMobile').classList.toggle('open');
+    });
+    function closeNav() {
+      document.getElementById('navMobile').classList.remove('open');
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
