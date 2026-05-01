@@ -467,14 +467,26 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(90deg, var(--blush), var(--terra), var(--blush));
 }
 .featured-service {
-  background: linear-gradient(135deg, var(--terra) 0%, var(--terra-dark) 100%);
-  color: var(--white);
-  border-color: var(--terra-dark);
+  background: linear-gradient(135deg, var(--blush) 0%, var(--blush-dark) 100%);
+  color: var(--dark);
+  border: 2px solid var(--blush-dark);
+  transform: scale(1.02);
 }
-.featured-service h3 { color: var(--white); font-weight: 700; }
-.featured-service p { color: rgba(255,255,255,0.95); font-weight: 500; }
-.featured-service .service-price { color: var(--cream); font-weight: 700; }
-.featured-service .service-icon { color: var(--cream); }
+.featured-service:hover {
+  transform: scale(1.02) translateY(-6px);
+  box-shadow: 0 22px 56px rgba(212, 148, 154, 0.5);
+}
+.featured-service h3 { color: var(--dark); font-weight: 700; }
+.featured-service p { color: var(--dark); font-weight: 500; opacity: 0.85; }
+.featured-service .service-price { color: var(--terra-dark); font-weight: 700; }
+.featured-service .service-icon { color: var(--terra-dark); }
+.featured-service .service-badge {
+  background: var(--terra-dark);
+  color: var(--cream);
+}
+.featured-service::after {
+  background: linear-gradient(90deg, var(--terra), var(--terra-dark), var(--terra));
+}
 .service-badge {
   position: absolute;
   top: 20px;
